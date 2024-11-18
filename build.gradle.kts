@@ -19,11 +19,13 @@ dependencies {
     implementation(libs.ktor.serialization.kotlinx.json)
     implementation(libs.ktor.client.cio)
     implementation(libs.twitch4j)
+    implementation(libs.events4j.handler.simple)
     implementation(libs.logback.classic)
     implementation(libs.exposed.core)
     implementation(libs.exposed.jdbc)
     implementation(libs.h2)
     implementation(libs.postgresql)
+    implementation(libs.kotlin.logging.jvm)
     testImplementation(libs.kotlin.test)
 }
 
@@ -36,5 +38,5 @@ kotlin {
 }
 
 application {
-    mainClass.set("AppKt")
+    mainClass.set("org.rieg.AppKt")
 }
